@@ -1,14 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
-
+gem 'haml', '3.1.7'
+gem 'jquery-rails'
+gem 'paperclip', '3.4.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :database do
   gem 'sqlite3'
   gem 'mysql2', '0.3.11'
-  gem 'activerecord-mysql2-adapter', '0.0.3'
+  #gem 'activerecord-mysql2-adapter', '0.0.3'
 end
 
 # Gems used only for assets and not required
@@ -23,8 +25,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
+group :test do
+  gem 'rspec', '2.12.0'
+  gem 'thoughtbot-shoulda', '2.11.1'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -32,7 +37,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn', '4.5.0'
 
 # Deploy with Capistrano
 # gem 'capistrano'

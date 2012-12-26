@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  name: MyString
+  description: MyText
+  image: MyString
+  thumb: MyString
+  terrain: MyString
+  weight: 1
+  height: 1
+  speed: 1
+
+two:
+  id: 1
+  name: MyString
+  description: MyText
+  image: MyString
+  thumb: MyString
+  terrain: MyString
+  weight: 1
+  height: 1
+  speed: 1

@@ -1,5 +1,5 @@
 Dinosaur::Application.routes.draw do
-  get "home/index"
+  resources :dinos
 
   root :to => 'home#index'
   # The priority is based upon order of creation:

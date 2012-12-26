@@ -1,0 +1,12 @@
+!!! html
+%html
+  %head
+  %title="Dinosaur"
+  =stylesheet_link_tag "application", "home"
+  =javascript_include_tag "application"
+  =csrf_meta_tags
+
+%body
+
+  #container.clearfix
+    = yield
