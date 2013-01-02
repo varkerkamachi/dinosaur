@@ -1,0 +1,1 @@
+#dino = FactoryGirl.build(:dino)

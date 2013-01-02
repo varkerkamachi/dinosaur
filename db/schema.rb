@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121224092436) do
+ActiveRecord::Schema.define(:version => 20130102213314) do
 
   create_table "dinos", :force => true do |t|
     t.string   "name"
@@ -19,11 +19,11 @@ ActiveRecord::Schema.define(:version => 20121224092436) do
     t.string   "image"
     t.string   "thumb"
     t.string   "terrain"
-    t.integer  "weight"
-    t.integer  "height"
-    t.integer  "speed"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.decimal  "weight",      :precision => 8, :scale => 2
+    t.decimal  "height",      :precision => 8, :scale => 2
+    t.decimal  "speed",       :precision => 8, :scale => 2
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
   end
 
 end

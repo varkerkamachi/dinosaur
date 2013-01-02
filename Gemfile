@@ -26,9 +26,14 @@ group :assets do
 end
 
 
-group :test do
+group :development, :test do
   gem 'rspec', '2.12.0'
+  gem 'rspec-rails', '2.12.0'
   gem 'thoughtbot-shoulda', '2.11.1'
+  gem "fakeweb", "1.3.0"
+  gem "factory_girl", "4.1.0"
+  gem "gherkin", "2.11.5"
+  gem "cucumber", "1.2.1"
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

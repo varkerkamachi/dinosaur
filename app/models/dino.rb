@@ -1,7 +1,7 @@
 class Dino < ActiveRecord::Base
   attr_accessible :description, :height, :id, :image, :name, :speed, :terrain, :thumb, :weight
 
-  scope :limit, lambda { |n| { :conditions => ["limit = ?", n] } }
+  scope :limit, lambda { |n| { :limit => n } }
   
   validates_presence_of :name, :description
   
