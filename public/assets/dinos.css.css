@@ -1,0 +1,46 @@
+.thumbnail {
+  width: 75px; }
+
+.creature-images {
+  width: 225px; }
+
+.slides .dino-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 235px;
+  text-align: left; }
+  .slides .dino-title span {
+    font: normal 18px/26px "Marcellus", serif;
+    text-shadow: 0 0 2px #fdfeff;
+    color: #464848; }
+
+.slides li {
+  position: relative; }
+  .slides li a {
+    display: block;
+    text-decoration: none; }
+  .slides li a:hover {
+    background: white;
+    text-decoration: none;
+    border: 0; }
+
+.listing {
+  margin: 10px auto 5px; }
+  .listing .dino-title {
+    padding-left: 100px; }
+  .listing p.listing-teaser {
+    margin: 0 0 5px;
+    padding: 0 10px 0 100px;
+    text-shadow: 0 0 2px #efefef; }
+  .listing li {
+    position: relative;
+    margin: 20px auto 10px;
+    border-radius: 8px;
+    moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    box-shadow: 0 0 2px #ababac;
+    padding: 20px 10px; }
+
+#mapholder {
+  margin: 30px 0 10px; }

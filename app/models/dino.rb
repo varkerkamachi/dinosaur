@@ -1,5 +1,5 @@
 class Dino < ActiveRecord::Base
-  attr_accessible :description, :height, :id, :image, :name, :speed, :terrain, :thumb, :weight
+  attr_accessible :description, :height, :id, :image, :name, :speed, :terrain, :thumb, :weight, :diet, :era, :geoX, :geoY
 
   scope :limit, lambda { |n| { :limit => n } }
   

@@ -1,9 +1,17 @@
 ---
+home/backgrounds/cretaceous.jpg: home/backgrounds/cretaceous-b1434776e4f595531802c70abb6438ad.jpg
+home/backgrounds/cretaceous/index.jpg: home/backgrounds/cretaceous-b1434776e4f595531802c70abb6438ad.jpg
+home/cover/brachiosaurus.jpg: home/cover/brachiosaurus-ac991817135b99140201b08baff2a389.jpg
+home/cover/brachiosaurus/index.jpg: home/cover/brachiosaurus-ac991817135b99140201b08baff2a389.jpg
 home/cover/dino1.jpg: home/cover/dino1-8b94b4c62061e7a5f562f62170983b22.jpg
 home/cover/dino1/index.jpg: home/cover/dino1-8b94b4c62061e7a5f562f62170983b22.jpg
+home/cover/pteranodon.jpg: home/cover/pteranodon-5cbcd441c40fe781c3d3c92b971f4089.jpg
+home/cover/pteranodon/index.jpg: home/cover/pteranodon-5cbcd441c40fe781c3d3c92b971f4089.jpg
+home/logo/logo-bkgnd.jpg: home/logo/logo-bkgnd-fef9f9554efadadab8f3239b9fbf9b3f.jpg
+home/logo/logo-bkgnd/index.jpg: home/logo/logo-bkgnd-fef9f9554efadadab8f3239b9fbf9b3f.jpg
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
-application.js: application-f51a00e650a4c3f5b0f7c676a2dfa530.js
-application/index.js: application-f51a00e650a4c3f5b0f7c676a2dfa530.js
-application.css: application-4e9196adcb5d19b1f4978dc17b7295ea.css
-application/index.css: application-4e9196adcb5d19b1f4978dc17b7295ea.css
+application.js: application-f8462c9ed4ce95d8ffd65125e04b27ca.js
+application/index.js: application-f8462c9ed4ce95d8ffd65125e04b27ca.js
+application.css: application-41f7a8387c10a08a4ef3f8256dab89f4.css
+application/index.css: application-41f7a8387c10a08a4ef3f8256dab89f4.css

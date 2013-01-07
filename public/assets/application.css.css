@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ font-family: 'Marcellus', serif;
+ font-family: 'Istok Web', sans-serif;
+ font-family: 'Bad Script', cursive;
+ */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #fefcfb; }
+
+.wrapper {
+  position: relative;
+  background: url("/assets/home/backgrounds/cretaceous.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .wrapper .header-wrapper {
+    background: #ae9e76;
+    padding: 10px 0;
+    height: 150px; }
+    .wrapper .header-wrapper .header-wrapper-inner {
+      width: 100%;
+      height: 100%;
+      background: white; }
+      .wrapper .header-wrapper .header-wrapper-inner .logo-wrapper {
+        width: 1000px;
+        height: 100%;
+        text-align: left;
+        background: white;
+        margin: 0 auto; }
+        .wrapper .header-wrapper .header-wrapper-inner .logo-wrapper #logo,
+        .wrapper .header-wrapper .header-wrapper-inner .logo-wrapper a#logo {
+          display: inline-block;
+          background: url("/assets/home/logo/logo-bkgnd.jpg") left center no-repeat;
+          padding: 75px 150px 75px 110px;
+          font-size: 24px;
+          font-family: 'Istok Web', sans-serif;
+          color: blue; }
+
+#container {
+  background: white;
+  margin: 0 auto;
+  width: 1000px;
+  min-height: 700px;
+  border: 1px solid #efefef; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.cols {
+  position: relative;
+  margin: 0 20px;
+  padding: 20px;
+  text-align: left; }
+
+.half-width {
+  padding: 20px 0px;
+  width: 460px; }
+
+.two-third-width {
+  padding: 20px 0px;
+  width: 627px; }
+
+.third-width {
+  padding: 20px 0px;
+  width: 293px; }
+
+.quarter-width {
+  padding: 20px 0px;
+  width: 220px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+p, div, span, a {
+  color: #232828;
+  font: normal 14px/18px "Marcellus", sans-serif;
+  text-shadow: 0 0 1px #fdfeff; }
+
+img .styled {
+  border: 4px solid #d9dedf;
+  margin: 10px 0; }

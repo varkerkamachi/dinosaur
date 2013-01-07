@@ -1,7 +1,29 @@
-.cols.left
-  %h1
-    Home - #index action
-  %img{ :src => "assets/home/cover/dino1.jpg", :class => "styled", :width => "220px" }
+:javascript
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      slideshow:false,
+    });
 
-.cols.right
-  %p="Welcome to my dinosaur website!"
+  });
+
+.cols.full-width
+  %h1
+    //Dinos are everywhere!! 
+
+  //#geo
+  %br
+  &nbsp;
+    
+  %div.flexslider
+    %ul.slides
+      - @teaserset.each do |d|
+        %li
+          %a{ :href => dino_path(d) }
+
+            %img{ :src => "#{d.thumb}", :class => "creature-images styled" }
+            .dino-title
+              %span
+                = "#{d.name}"
+          
+  //#mapholder
+    

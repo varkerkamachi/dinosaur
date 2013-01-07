@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130102213314) do
+ActiveRecord::Schema.define(:version => 20130104185520) do
 
   create_table "dinos", :force => true do |t|
     t.string   "name"
@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(:version => 20130102213314) do
     t.decimal  "speed",       :precision => 8, :scale => 2
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
+    t.float    "geoX"
+    t.float    "geoY"
+    t.string   "era"
+    t.string   "diet"
   end
 
 end

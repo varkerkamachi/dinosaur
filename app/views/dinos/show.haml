@@ -1,0 +1,58 @@
+:javascript
+  $(window).ready(function() {        
+    var showPosition = function(position) {
+      // $('#geo').html("Latitude: " + position.coords.latitude +
+      //   "<br>Longitude: " + position.coords.longitude);
+      //var latandlon =  position.coords.latitude +","+ position.coords.longitude;
+      var latandlon = "#{@dino.geoX}" + "," + "#{@dino.geoY}"
+      var img_url="http://maps.googleapis.com/maps/api/staticmap?center="+latandlon+"&zoom=4&size=290x300&sensor=false";
+
+      $("#mapholder").html("<img src='"+img_url+"'>");
+    }
+    
+    if (Modernizr.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    }
+    else {
+      $('#geo').html("No geolocation support");
+    }
+    
+
+  });
+
+#geo
+#notice
+  =notice
+
+#dino-detail
+  .cols.left.third-width
+    %img{ :src => "/#{@dino.image}", :class => "creature-images styled detail-page" }
+    
+    #mapholder
+      //%img{ :src => "#{@dino.image}", :class => "creature-images styled detail-page" }
+
+  .cols.right.two-third-width
+    %h2
+      =h @dino.name
+    
+    %br
+    %p
+      %h3
+        Description:
+      =@dino.description
+
+    %p
+      %h4
+        Terrain:
+      = @dino.terrain
+      %h4
+        Weight:
+      = @dino.weight
+      %h4
+        Speed:
+      = @dino.speed
+      %h4
+        Height:
+      = @dino.height
+
+    = link_to 'Back', dinos_path
