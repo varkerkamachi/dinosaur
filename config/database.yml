@@ -29,7 +29,7 @@ development:
   host: localhost
   database: db/dinosaur-development
   username: root
-  password: 
+  password: root
   pool: 5
   timeout: 5000
 
@@ -38,7 +38,7 @@ test:
   host: localhost
   database: db/dinosaur-test
   username: root
-  password: 
+  password: root
   pool: 5
   timeout: 5000
 

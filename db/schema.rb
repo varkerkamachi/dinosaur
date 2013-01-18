@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130104185520) do
+ActiveRecord::Schema.define(:version => 20130115042057) do
+
+  create_table "countries", :force => true do |t|
+    t.string   "iso"
+    t.string   "country"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "dinos", :force => true do |t|
     t.string   "name"
@@ -28,6 +35,14 @@ ActiveRecord::Schema.define(:version => 20130104185520) do
     t.float    "geoY"
     t.string   "era"
     t.string   "diet"
+    t.string   "location"
+  end
+
+  create_table "states", :force => true do |t|
+    t.string   "abbr"
+    t.string   "state"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

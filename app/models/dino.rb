@@ -1,5 +1,7 @@
 class Dino < ActiveRecord::Base
-  attr_accessible :description, :height, :id, :image, :name, :speed, :terrain, :thumb, :weight, :diet, :era, :geoX, :geoY
+  attr_accessible :description, :height, :id, :image, :name, :speed, :terrain, :thumb, :weight, :diet, :era, :location, :geoX, :geoY
+  geocoded_by :location, :latitude => :geoX, :longitude => :geoY
+  after_validation :geocode, :if => :location_changed?
 
   scope :limit, lambda { |n| { :limit => n } }
   

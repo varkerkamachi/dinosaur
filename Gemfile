@@ -5,11 +5,15 @@ gem 'haml', '3.1.7'
 gem 'jquery-rails'
 gem 'paperclip', '3.4.0'
 gem "nokogiri", "1.5.6"
+gem "hpricot", "0.8.6"
 gem "webrobots", "0.0.13"
 gem "mechanize", "2.5.1"
+gem "httparty", "0.9.0"
+gem "multi_xml", "0.5.1"
 gem "hoe", "3.4"
 gem "net-http-digest_auth", "1.2.1"
 gem "net-http-persistent", "2.8"
+gem "geocoder", "1.1.6"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
