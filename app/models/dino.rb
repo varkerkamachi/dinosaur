@@ -1,4 +1,7 @@
+require 'dinoscraper'
+
 class Dino < ActiveRecord::Base
+  
   attr_accessible :description, :height, :id, :image, :name, :speed, :terrain, :thumb, :weight, :diet, :era, :location, :geoX, :geoY
   geocoded_by :location, :latitude => :geoX, :longitude => :geoY
   after_validation :geocode, :if => :location_changed?
@@ -6,7 +9,7 @@ class Dino < ActiveRecord::Base
   scope :limit, lambda { |n| { :limit => n } }
   
   validates_presence_of :name, :description
-  
+    
   def self.find_fastest
     return self.find(:all, :order => "speed desc")
   end
@@ -30,5 +33,5 @@ class Dino < ActiveRecord::Base
   def self.find_shortest
     return self.find(:all, :order => "height asc")
   end
-    
+
 end
