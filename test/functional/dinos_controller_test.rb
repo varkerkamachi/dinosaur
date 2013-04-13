@@ -2,7 +2,7 @@ require 'test_helper'
 
 class DinosControllerTest < ActionController::TestCase
   setup do
-    @dino = dinos(:one)
+    @dino = Dino.find(:first)
   end
 
   test "should get index" do
@@ -11,14 +11,9 @@ class DinosControllerTest < ActionController::TestCase
     assert_not_nil assigns(:dinos)
   end
 
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
   test "should create dino" do
     assert_difference('Dino.count') do
-      post :create, dino: { description: @dino.description, height: @dino.height, id: @dino.id, image: @dino.image, name: @dino.name, speed: @dino.speed, terrain: @dino.terrain, thumb: @dino.thumb, weight: @dino.weight }
+      post :create, dino: { description: @dino.description, height: @dino.height, image: @dino.image, name: @dino.name, speed: @dino.speed, terrain: @dino.terrain, thumb: @dino.thumb, weight: @dino.weight }
     end
 
     assert_redirected_to dino_path(assigns(:dino))
