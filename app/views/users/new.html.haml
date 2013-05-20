@@ -1,0 +1,24 @@
+.cols.left.list_view
+  %h1
+    Sign up as a new user
+  - @user.password = @user.password_confirmation = nil
+
+  = form_for :user, :url => users_path, :html => { :class => 'clear' } do |f|
+    .rows
+      = label_tag 'login'
+      = f.text_field :login, :class => 'right'
+
+    .rows
+      = label_tag 'email'
+      = f.text_field :email, :class => 'right'
+
+    .rows
+      = label_tag 'password'
+      =f.password_field :password, :class => 'right'
+
+    .rows
+      = label_tag 'password_confirmation', 'Confirm Password'
+      = f.password_field :password_confirmation, :class => 'right'
+
+    .rows.last
+      = submit_tag 'Sign up', :class => 'right'
