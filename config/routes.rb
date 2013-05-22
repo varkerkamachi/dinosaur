@@ -1,5 +1,8 @@
 Dinosaur::Application.routes.draw do
 
+  resources :herds
+
+
   resources :users do
     member do
       put :suspend

@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.2.9'
 gem 'haml', '3.1.7'
 gem 'jquery-rails'
+gem 'rails-backbone'
 gem 'paperclip', '3.4.0'
 gem "nokogiri", "1.5.6"
 gem "hpricot", "0.8.6"

@@ -47,6 +47,6 @@ production:
   host: localhost
   database: db/dinosaur-production
   username: root
-  password: 
+  password: root
   pool: 5
   timeout: 5000

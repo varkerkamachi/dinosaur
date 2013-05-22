@@ -1,0 +1,28 @@
+/ .cols.left.third-width
+/   &nbsp;
+/   
+/ .cols.right.two-third-width
+/   %h1
+/     Dinos
+/ 
+/   %ul.slides.listing
+/     - @dinos.each do |d|
+/       %li
+/         %a{ :href => dino_path(d) }
+/ 
+/           %img{ :src => "#{d.thumb}", :class => "thumbnail styled" }
+/         .dino-title
+/           %span
+/             = "#{d.name}"
+/ 
+/         %p.listing-teaser
+/           =sanitize(truncate(d.description, :omission => '...', :length => 65))
+
+%p
+  javascript version:
+
+:javascript
+  $(function() {
+    window.router = new Dinosaur.Routers.DinosRouter({dinos: #{@dinos.to_json.html_safe}});
+    Backbone.history.start();
+  });

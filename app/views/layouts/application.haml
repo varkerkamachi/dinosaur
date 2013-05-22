@@ -7,7 +7,7 @@
       %meta{ :name => "Description", :content => "#{@pagedescription}" }
     %title="#{@pagetitle}"
 
-    =stylesheet_link_tag "application", "home", "flexslider", "http://fonts.googleapis.com/css?family=Marcellus|Istok+Web:400,700|Bad+Script"
+    =stylesheet_link_tag "application", "http://fonts.googleapis.com/css?family=Marcellus|Istok+Web:400,700|Bad+Script", :media => "all"
     =javascript_include_tag "application", "modernizr", "flexslider"
     =csrf_meta_tags
 
