@@ -1,0 +1,7 @@
+%h1 Eras
+%p
+
+  %ul
+    - @eras.each do |e|
+      %li
+        = e.try(:name).try(:titleize)

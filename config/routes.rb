@@ -1,7 +1,15 @@
 Dinosaur::Application.routes.draw do
+  get 'eras/index'
+
   get "home/index"
 
   root :to => 'home#index'
+
+  resources :eras
+  resources :dinos
+  resources :locations
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

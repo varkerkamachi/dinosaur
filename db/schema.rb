@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160220224958) do
+ActiveRecord::Schema.define(version: 20160221065708) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,18 @@ ActiveRecord::Schema.define(version: 20160220224958) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "galleries", force: :cascade do |t|
+    t.string   "large_image1"
+    t.string   "large_image2"
+    t.string   "large_image3"
+    t.string   "map_image"
+    t.string   "thumbnail"
+    t.integer  "dino_id"
+    t.boolean  "user_uploaded"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "locations", force: :cascade do |t|
     t.string   "name"
     t.integer  "climate_id"
@@ -59,5 +71,6 @@ ActiveRecord::Schema.define(version: 20160220224958) do
 
   add_foreign_key "dinos", "eras"
   add_foreign_key "dinos", "locations"
+  add_foreign_key "galleries", "dinos"
   add_foreign_key "locations", "climates"
 end
