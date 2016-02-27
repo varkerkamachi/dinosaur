@@ -4,4 +4,9 @@
 </div>
 <div class="cols right">
   <p>Welcome to my dinosaur website!</p>
+  <ul>
+  	<%- @dinos.each do |d| %>
+	  	<li><%=d.name%></li>
+  	<%-end%>
+  </ul>
 </div>
